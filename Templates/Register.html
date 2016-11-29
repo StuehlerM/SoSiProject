@@ -1,4 +1,20 @@
 {% extends 'ParentTemplate.html' %}
 {% block body %}
-
+    <h1>Registrierung</h1>
+    <form action="{{url_for('register')}}" method="post">
+    <span>
+        <span>
+            Nachname:
+        </span>
+        <input type="text" name="Name" placeholder="Nachname...">
+    </span>
+        <br>
+        <span>
+        <span>
+            Vorname:
+        </span>
+        <input type="text" name="Vorname" placeholder="Vorname...">
+    </span>
+        <input type="submit" value="Registrieren">
+    </form>
 {% endblock %}
